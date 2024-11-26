@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+    <title>Houssem-eddin's ASSOCIATIONS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>SPRING DATA JPA – ASSOCIATIONS</h1>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-active">
+
+                    <tr>
+                        <td class="table-primary">
+                            <input type="text" id="c1" class="w-100" onchange="myFunction()" placeholder="First class" />
+                        </td>
+                        <td>
+                            <select name="" id="type" style="background-color: rgb(177, 216, 250)"
+                                onchange="myFunction()">
+                                <option value="1">1----------- >1</option>
+                                <option value="2">1----------- >*</option>
+                                <option value="3">*----------- >1</option>
+                                <option value="4">*----------- >*</option>
+                                <option value="5">1-------------1</option>
+                                <option value="6">*-------------1</option>
+                                <option value="7">*-------------*</option>
+                            </select>
+                        </td>
+                        <td class="table-info">
+                            <input type="text" id="c2" class="w-100" onchange="myFunction()" placeholder="Second class" />
+                        </td>
+                        <td rowspan="2"  style="vertical-align: middle;" align="middle">
+                            <div id="i1">
+                                <img width="30%"
+                                    src="https://yt3.googleusercontent.com/ytc/AIdro_kS7Z0Hi-VBSKkEvVT0y4bG5MqQx8L2VBPCxBTG4aBp0asO=s160-c-k-c0x00ffffff-no-rj"
+                                    alt="sihoussem" />
+                            </div>
+
+                            <div id="i2" style="display: none">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Warning.svg/2219px-Warning.svg.png"
+                                    width="25%" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-primary">
+                            <div>
+                                <textarea rows="7" cols="40" id="r1">@</textarea>
+                                <button onclick="copyleft()" class="btn btn-info btn-block">
+                                    <span>Copy me</span>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <br /><br /><br />
+                            <div id="pf"></div>
+                        </td>
+                        <td class="table-info">
+                            <div>
+                                <textarea rows="7" cols="40" id="r2">@</textarea>
+                                <button onclick="copyright()" class="btn btn-info btn-block">
+                                    <span>Copy me</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr />
+        <div class="alert alert-warning">
+            <p>
+                If you're using a bidirectional association, make sure that the child
+                is on the right !!!!!!!!!
+            </p>
+            <div id="i3" style="display: none">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Warning.svg/2219px-Warning.svg.png"
+                    width="10%" />
+            </div>
+        </div>
+
+        <hr />
+        <br /><br /><br /><br /><br /><br />
+        <hr />
+
+        <div class="card d-inline p-2">
+            <!-- Facebook link -->
+            <a href="https://www.facebook.com/houssem.jallouli.3/" target="_blank">
+                <img src="https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9"
+                    width="30" />
+            </a>
+
+            <!-- YouTube link -->
+            <a href="https://www.youtube.com/channel/UCvmNYMhL3woai62MG2xbjMQ" target="_blank"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEOi7271_q9aK95H04BKCYVeGOG0NmHp8tEsvkHA2cKw&s"
+                    width="30" /></a>
+
+            <!-- Email link -->
+            <a href="mailto:houssem-eddin.jallouli@esprit.tn"><img
+                    src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+                    width="30" /></a>
+
+            <!-- Git link -->
+            <a href="https://github.com/houssem-eddinjallouli" target="_blank"><img
+                    src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="30" /></a>
+
+            <!-- linkedin link -->
+            <a href="https://www.linkedin.com/in/houssem-edin-jallouli-aa7a33176/" target="_blank"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvy_-da5MIMvgjQgXWNCVX4-Q9zb-yy9cLMU1VUBHCUg&s"
+                    width="30" /></a>
+
+            <!-- twitter link -->
+            <a href="https://twitter.com/Houssemjalloul1" target="_blank"><img
+                    src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b?h=464"
+                    width="30" /></a>
+
+            <!-- reddit link -->
+            <a href="https://www.reddit.com/user/houssemjallouli/" target="_blank"><img
+                    src="https://play-lh.googleusercontent.com/FpCCoNLOt6LRIY_3NM5Rk_LDN-kFNz0yxdFjm-CYM4XavRQfoQlXxOtgC7abfexIDOE  "
+                    width="30" /></a>
+        </div>
+        <hr />
+    </div>
+
+    <script>
+        function myFunction() {
+            var class1 = document.getElementById("c1").value;
+            var class2 = document.getElementById("c2").value;
+            var typev = document.getElementById("type").value;
+
+            let ptf = "";
+            let res1;
+            let res2;
+
+            switch (typev) {
+                case "1":
+                    res1 =
+                        "@OneToOne\nprivate " + class2 + " " + class2.toLowerCase() + ";";
+                    res2 = "//vide";
+                    active1();
+                    break;
+                case "2":
+                    res1 =
+                        "@OneToMany\(cascade = CascadeType.ALL)\nprivate Set<" +
+                        class2 +
+                        "> " +
+                        class2 +
+                        "s = new HashSet<>();";
+                    res2 = "//vide";
+                    active1();
+                    break;
+                case "3":
+                    res1 =
+                        "@ManyToOne\(cascade = CascadeType.ALL)\n" +
+                        class2 +
+                        " " +
+                        class2.toLowerCase() +
+                        ";";
+                    res2 = "//vide";
+                    active1();
+                    break;
+                case "4":
+                    res1 =
+                        "@ManyToMany\(cascade = CascadeType.ALL)\nprivate Set<" +
+                        class2 +
+                        "> " +
+                        class2.toLowerCase() +
+                        "s = new HashSet<>();";
+                    res2 = "//vide";
+                    active1();
+                    break;
+                case "5":
+                    ptf = "<--Pere | fils-->";
+                    res1 =
+                        "@OneToOne\nprivate " + class2 + " " + class2.toLowerCase() + ";";
+                    res2 =
+                        '@OneToOne\(mappedBy="' +
+                        class2.toLowerCase() +
+                        '"\)\nprivate ' +
+                        class1 +
+                        " " +
+                        class1.toLowerCase() +
+                        ";";
+                    active2();
+                    break;
+                case "6":
+                    res1 = "@ManyToOne\n" + class2 + " " + class2.toLowerCase() + ";";
+                    res2 =
+                        '@OneToMany\(cascade = CascadeType.ALL, mappedBy="' +
+                        class2.toLowerCase() +
+                        '")\nprivate Set<' +
+                        class1 +
+                        "> " +
+                        class1 +
+                        "s = new HashSet<>();";
+                    active1();
+                    break;
+                case "7":
+                    ptf = "<--Pere | fils-->";
+                    res1 =
+                        "@ManyToMany\(cascade = CascadeType.ALL)\nprivate Set<" +
+                        class2 +
+                        "> " +
+                        class2.toLowerCase() +
+                        "s = new HashSet<>();";
+                    res2 =
+                        '@ManyToMany\(mappedBy="' +
+                        class2.toLowerCase() +
+                        's", cascade = CascadeType.ALL)\nprivate Set<' +
+                        class1 +
+                        "> " +
+                        class1.toLowerCase() +
+                        "s = new HashSet<>();";
+                    active2();
+                    break;
+            }
+            document.getElementById("r1").value = res1;
+            document.getElementById("r2").value = res2;
+            document.getElementById("pf").innerHTML = ptf;
+        }
+
+        function copyleft() {
+            var copyText = document.getElementById("r1");
+            // Select the text field
+            copyText.select();
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+        }
+        function copyright() {
+            var copyText = document.getElementById("r2");
+            // Select the text field
+            copyText.select();
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+        }
+        function active1() {
+            document.getElementById("i1").style.display = "block";
+            document.getElementById("i2").style.display = "none";
+            document.getElementById("i3").style.display = "none";
+        }
+        function active2() {
+            document.getElementById("i1").style.display = "none";
+            document.getElementById("i2").style.display = "block";
+            document.getElementById("i3").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
